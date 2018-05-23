@@ -4,8 +4,9 @@
 #
 #  This approach should work for any ASP.NET 4.6 application
   
-FROM microsoft/iis:windowsservercore
+#FROM microsoft/iis:windowsservercore
 #FROM windowsservercore:10.0.14300.1000
+FROM windowsservercore
 RUN powershell -Command Add-WindowsFeature Web-Server
 
 ENV WeatherServiceUrl http://localhost:5000
